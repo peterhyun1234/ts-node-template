@@ -60,3 +60,32 @@ $ npx ts-node index.ts
 ``` bash
 $ npx tsc --traceResolution
 ```
+
+### 4.4. 필요한 packages 설치
+
+``` bash
+$ npm i morgan cors cookie-parser express-session dotenv passport 
+$ npm i hpp helmet 
+$ npm i passport-local bcrypt
+```
+> 대부분의 packages가 typing을 지원하지 않기 때문에 추가 설치 필요
+
+``` bash
+$ npm i @types/morgan @types/cors @types/cookie-parser @types/express-session @types/dotenv @types/passport 
+$ npm i @types/hpp @types/helmet 
+$ npm i @types/passport-local @types/bcrypt
+```
+
+### 4.5. Sequelize 
+``` bash
+$ npm i sequelize
+$ npm i sequelize-cli
+
+$ npx sequelize init
+$ npx sequelize db:create
+```
+
+* 쌩 쿼리 날리는 건 좋지 않음
+* ORM을 통해서 쿼리를 보내는 걸 선호
+* 비번 같은 경우 .env를 통해서 보관하는 과정이 있으면 좋음
+
